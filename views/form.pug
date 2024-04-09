@@ -1,0 +1,17 @@
+// form.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title New Message Form
+  body
+    h1 New Message Form
+    form(method="POST", action="/new")
+      label(for="author") Author's Name:
+      input(type="text", id="author", name="author")
+      
+      label(for="message") Message Text:
+      textarea(id="message", name="message")
+      
+      button(type="submit") Submit

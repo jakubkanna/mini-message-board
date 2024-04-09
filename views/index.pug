@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  div
+    each message in messages
+        p #{message.text} 
+        span #{message.user} 
+        span #{message.added}
+  br
+  div
+    a(href="/new")
+      button Add New Message
